@@ -5,7 +5,7 @@ export class ControladorReserva {
 
     constructor() { }
 
-    async buscarTodasReservas() {
+    async buscarTodasReservas(request, response) {
         let servicioR = new ServicioReserva()
         try {
 
@@ -25,7 +25,7 @@ export class ControladorReserva {
         }
     }
 
-    async buscarReservaPorId() {
+    async buscarReservaPorId(request, response) {
         let id = request.params.id // CAPTURO EL ID QUE LLEGA POR LA URL
         console.log(`El id solicitado es: ${id}`)
         let servicioR = new ServicioReserva() // Se instancia la clase SERVICIO
@@ -46,7 +46,7 @@ export class ControladorReserva {
         }
     }
 
-    async registrarReservas() {
+    async registrarReservas(request, response) {
         let datosPeticion = request.body
         console.log(datosPeticion)
         let servicioR = new ServicioReserva() // Se instancia la clase SERVICIO
@@ -67,7 +67,7 @@ export class ControladorReserva {
         }
     }
 
-    async editarReserva() {
+    async editarReserva(request, response) {
         let id = request.params.id
         let datosPeticion = request.body
         let servicioR = new ServicioReserva() // Se instancia la clase SERVICIO
@@ -88,7 +88,7 @@ export class ControladorReserva {
         }
     }
 
-    async eliminarReserva() {
+    async eliminarReserva(request, response) {
         let id = request.params.id
         let servicioR = new ServicioReserva() // Se instancia la clase SERVICIO
 

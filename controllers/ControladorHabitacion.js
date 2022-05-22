@@ -19,7 +19,7 @@ export class Controlador {
 
         } catch (error) {
             response.status(400).json({
-                mensaje: "Oops..." + error,
+                mensaje: "Oops... " + error,
                 data: [],
                 estado: false
             })
