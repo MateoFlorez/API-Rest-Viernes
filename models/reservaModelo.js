@@ -3,6 +3,10 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema
 
 const Reserva = new Schema({
+    nombre:{
+        type:String,
+        required:true
+    },
     fechaIn:{
         type:Date,
         required:true
@@ -15,8 +19,8 @@ const Reserva = new Schema({
         type:Number,
         required:true
     },
-    idCliente:{
-        type:Number,
+    telefono:{
+        type:String,
         required:true
     },
     numeroPersonas:{

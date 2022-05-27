@@ -20,8 +20,8 @@ rutas.put('/API/v1/viernes/:id', controlador.editar)
 rutas.delete('/API/v1/viernes/id', controlador.eliminar)
 
 // RUTAS DE RESERVA
-rutas.get('/API/v1/viernes/reservas', controladorReserva.buscarTodasReservas)
-rutas.get('/API/v1/viernes/reservas/:id', controladorReserva.buscarReservaPorId)
-rutas.post('/API/v1/viernes/reservas', controladorReserva.registrarReservas)
-rutas.put('/API/v1/viernes/reservas/:id', controladorReserva.editarReserva)
-rutas.delete('/API/v1/viernes/reservas/:id', controladorReserva.eliminarReserva)
+rutas.get('/API/v1/reservas', controladorReserva.buscarTodasReservas)
+rutas.get('/API/v1/reservas/:id', controladorReserva.buscarReservaPorId)
+rutas.post('/API/v1/reservas', controladorReserva.registrarReservas)
+rutas.put('/API/v1/reservas/:id', controladorReserva.editarReserva)
+rutas.delete('/API/v1/reservas/:id', controladorReserva.eliminarReserva)
